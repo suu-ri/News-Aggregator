@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻聚合器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .news-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            margin: 0;
+        }
+        .date-picker {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>新闻聚合器</h1>
+    <div class="date-picker">
+        <label for="start-date">开始日期:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">结束日期:</label>
+        <input type="date" id="end-date">
+        <button id="filter-button">筛选新闻</button>
+    </div>
+    <div id="news-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>
